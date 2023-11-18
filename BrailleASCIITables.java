@@ -1,9 +1,9 @@
 import java.io.*;
 
 /**
- * A utility class that provides Braille to ASCII, 
- * Braille to Unicode, and ASCII to Braille conversions
- * using binary tree mappings for Braille characters.
+ * Provides Braille to ASCII, Braille to Unicode, 
+ * and ASCII to Braille conversions using binary 
+ * tree mappings for Braille characters.
  * 
  * @author Madel Sibal
  */
