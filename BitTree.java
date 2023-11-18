@@ -7,43 +7,39 @@ import java.io.*;
  * @author Madel Sibal
  * 
  */
-
-/**
-* Represents a node in the binary tree
-*/
 class BitTreeNode {
 
     // +--------+------------------------------------------------------
     // | Fields |
     // +--------+
 
-   /**
-    * The value associated with the node
-    */
+    /**
+     * The value associated with the node
+     */
     String val;  
     
-   /**
-    * The left child of the node
-    */
+    /**
+     * The left child of the node
+     */
     BitTreeNode left; 
        
-   /**
-    * The right child of the node
-    */
+    /**
+     * The right child of the node
+     */
     BitTreeNode right;     
            
-   /**
-    * The length of the bit string up to this node
-    */
+    /**
+     * The length of the bit string up to this node
+     */
     int bitLength;
     
     // +--------------+------------------------------------------------
     // | Constructors |
     // +--------------+
             
-   /**
-    * Constructor for internal nodes
-    */
+    /**
+     * Constructor for internal nodes
+     */
     BitTreeNode(int bitLength) {
         this.bitLength = bitLength;
         this.val = "";
@@ -53,8 +49,8 @@ class BitTreeNode {
 }
 
 /**
-* Represents a leaf node in the binary tree
-*/
+ * Represents a leaf node in the binary tree
+ */
 class BitTreeLeaf extends BitTreeNode {
     BitTreeLeaf(int bitLength) {
         super(bitLength);
@@ -62,31 +58,31 @@ class BitTreeLeaf extends BitTreeNode {
 }
 
 /**
-* Main class representing the binary tree
-*/
+ * Main class representing the binary tree
+ */
 public class BitTree {
 
     // +--------+------------------------------------------------------
     // | Fields |
     // +--------+
 
-   /**
-    * The root of the binary tree
-    */
+    /**
+     * The root of the binary tree
+     */
     private BitTreeNode root;   
 
-   /**
-    * The length of the bit strings
-    */
+    /**
+     * The length of the bit strings
+     */
     private int n;              
 
     // +--------------+------------------------------------------------
     // | Constructors |
     // +--------------+
 
-   /**
-    * Constructor initializes the binary tree with given bit length
-    */
+    /**
+     * Constructor initializes the binary tree with given bit length
+     */
     public BitTree(int n) {
         this.n = n;
         this.root = new BitTreeNode(0);
@@ -96,7 +92,6 @@ public class BitTree {
     // | Methods |
     // +---------+
 
-        
     /**
      * Sets a value in the binary tree for a given bit string
      */
